@@ -7,7 +7,7 @@ background-image: url("dark_wood.png");
     }
 
 .back-color {
-        color: #8e41d5;
+        color: #8e41d5 !important;
         }
 
 
@@ -19,6 +19,7 @@ p{
 }
 
 h3{
+text-shadow: 2px 2px 5px red;
 color:#ffbc00;
 font-size: 40px;
 font-family: "Passion One";
