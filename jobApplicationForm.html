@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Job Application</title>
+</head>
+<body>
+
+<h2>Job Application</h2>
+
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	<fieldset>
+		<legend>Register information</legend>
+		<div class="field">
+			<label>User Name</label> 
+			<input type="text" name="username">
+		</div>
+        <div class="field">
+			<label>Email you want to use for registeration:</label> 
+			<input type="text" name="email">
+		</div>
+        <div class="field">
+			<label>Password for your account:</label> 
+			<input type="password" name="pwd">
+		</div>
+		<div class="field">
+			<label>Repeat your password:</label> 
+			<input type="password" name="pwdr">
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Information</legend>
+		<div class="field">
+			<label>First Name </label> 
+			<input type="text" name="firstname">
+		</div>
+        <div class="field">
+			<label>Last Name</label> 
+			<input type="text" name="lastname">
+		</div>
+        <div class="field">
+        <label for="birthday">Date of Birth:</label>
+        <input type="date" id="birthday" name="birthday">
+        <input type="submit" value="Submit">
+        <div class="field">
+		
+
+        <div class="field">
+          <label>Estimated graduation date</label>
+          <input type="week" id="graduation_week" name="graduation_week">
+          <input type="submit" value="Submit">
+        </div>
+
+	</fieldset>
+
+    <p>Please describle something sbout yourself:</p>
+    <textarea name="description" style="width:200px; height:300px;">Enter here</textarea>
+    <br>
+    <input type="submit">
+
+
+    <p>Please upload your most recent resume here. </p>
+  <label for="resume">Select a file:</label>
+  <input type="file" id="resume" name="resume"><br><br>
+  <input type="submit" value="Submit">
+
+
+
+	<fieldset>
+		<legend>Working Preferences</legend>
+        <p>Please choose your working preferences:</p>
+        <div class="field">
+        <label for="preferences">Choose a preference:</label>
+        <select id="preferences" name="preferences">
+          <option value="On-line">On-line</option>
+          <option value="In-person">In-person</option>
+          <option value="Hybrid">Hybrid</option>
+          <option value="Neutral">Neutral</option>
+        </select>
+        <input type="submit">
+    </div>
+    <p>Click this button if you need more explanation on the choices.</p>
+    <button type="button" onclick="alert('Neutral means acceptable to all choices.')">Explanation</button>
+
+	 	<div class="field">
+			<label>Are you able to work during the weekends?</label> 
+			<input type="radio" name="weekends" value="yes">Yes
+			<input type="radio" name="weekends" value="no">No
+		</div>
+
+		<div class="field">
+			<label>How many hours per day on average are you willing to work? (Check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="average_6hours" value="6hours">6 hours</li>
+				<li><input type="checkbox" name="average_7hours" value="7hours">7 hours</li>
+				<li><input type="checkbox" name="average_8hours" value="8hours">8 hours</li>
+				<li><input type="checkbox" name="average_9hours" value="9hours">9 hours</li>
+			</ul>
+		</div>
+		
+        
+
+
+	</fieldset>
+
+
+    <h1>Please submit after you double-check filling all information above. Thank you.  </h1>
+	<input type="submit" value="Submit">
+
+</form>
+</body>
+</html>
